@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorBgYellow"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:paddingTop="@dimen/login_padding_top">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/msg_for_login"
+        android:textColor="@color/colorTextDarkYellow"
+        android:textSize="@dimen/login_text_size_medium"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/login_input_box_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_input_box_margin_top"
+        android:layout_marginBottom="@dimen/login_input_box_margin_bottom"
+        android:layout_marginLeft="@dimen/login_input_box_margin_left"
+        android:layout_marginRight="@dimen/login_input_box_margin_right"
+        android:elevation="@dimen/login_input_box_elevation"
+        android:background="@drawable/bg_round_corner_white"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/login_et_padding_top"
+            android:paddingBottom="@dimen/login_et_padding_bottom"
+            android:paddingLeft="@dimen/login_et_padding_left"
+            android:paddingRight="@dimen/login_et_padding_right"
+            android:textSize="@dimen/login_input_text_size"
+            android:hint="@string/hint_login_for_email_account"
+            android:background="@android:color/transparent"
+            android:inputType="textEmailAddress"/>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_input_box_divider_height"
+            android:background="@color/colorGray2"/>
+
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/login_et_padding_top"
+            android:paddingBottom="@dimen/login_et_padding_bottom"
+            android:paddingLeft="@dimen/login_et_padding_left"
+            android:paddingRight="@dimen/login_et_padding_right"
+            android:textSize="@dimen/login_input_text_size"
+            android:hint="@string/hint_login_for_password"
+            android:background="@android:color/transparent"
+            android:inputType="textPassword"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_activity_login_login"
+        android:layout_width="@dimen/login_button_login_width"
+        android:layout_height="@dimen/login_button_login_height"
+        android:layout_marginBottom="@dimen/login_button_login_margin_bottom"
+        android:background="@drawable/bg_round_corner_brown"
+        android:text="@string/btn_text_login"
+        android:textColor="@color/colorTextBrown2"
+        android:textSize="@dimen/login_button_text_size"/>
+
+    <TextView
+        android:id="@+id/tv_login_forgot_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/msg_for_forgot_ur_info"
+        android:textColor="@color/colorTextRed"/>
+    
+    <View
+        android:layout_width="@dimen/login_divider_width"
+        android:layout_height="@dimen/login_divider_height"
+        android:layout_marginTop="@dimen/login_divider_margin_top"
+        android:layout_marginBottom="@dimen/login_divider_margin_bottom"
+        android:background="@color/colorYellow"/>
+
+    <Button
+        android:id="@+id/btn_activity_login_skip"
+        android:layout_width="@dimen/login_button_skip_width"
+        android:layout_height="@dimen/login_button_skip_height"
+        android:text="@string/btn_text_skip"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/login_button_text_size"
+        android:background="@drawable/bg_round_corner_brown"/>
+
+
+</LinearLayout>

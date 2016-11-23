@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorBgYellow"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/profile_setting_padding_bottom"
+              android:paddingLeft="@dimen/profile_setting_padding_left"
+              android:paddingRight="@dimen/profile_setting_padding_right"
+              android:paddingTop="@dimen/profile_setting_padding_top">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/profile_setting_header_text_margin_bottom"
+        android:gravity="center_horizontal"
+        android:text="@string/msg_for_present_yourself"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="@dimen/profile_setting_text_size_medium"/>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="@dimen/profile_setting_photo_view_size"
+        android:layout_height="@dimen/profile_setting_photo_view_size"
+        android:layout_marginBottom="@dimen/profile_setting_photo_view_margin_bottom"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img_join_photo"
+        app:riv_corner_radius="@dimen/profile_setting_photo_view_radius"
+        app:riv_oval="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0/20"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/profile_setting_text_size_extra_small"
+            android:gravity="right"/>
+
+        <kr.latera.kakaotalk_replica.view.EditTextWithClearButton
+            android:id="@+id/et_profile_setting_username"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_setting_view_height"
+            android:layout_marginTop="@dimen/profile_setting_edittext_input_margin_top"
+            android:layout_marginBottom="@dimen/profile_setting_edittext_input_margin_bottom"/>
+
+        <Button
+            android:id="@+id/btn_activity_profile_setting_begin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/profile_setting_view_height"
+            android:background="@drawable/bg_round_corner_brown"
+            android:text="@string/btn_text_begin_kakaotalk"
+            android:textSize="@dimen/profile_setting_text_size_medium"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/profile_setting_faa_padding_to"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="@dimen/profile_setting_checkbox_size"
+                android:layout_height="@dimen/profile_setting_checkbox_size"
+                android:layout_marginLeft="@dimen/profile_setting_checkbox_margin_left"
+                android:layout_marginRight="@dimen/profile_setting_checkbox_margin_right"
+                android:button="@drawable/custom_checkbox_autofriend"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/profile_setting_checkbox_text_margin_bottom"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/profile_setting_checkbox_text_margin_right"
+                        android:text="@string/text_friend_add_auto"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="@dimen/profile_setting_text_size_medium"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/profile_setting_checkbox_text_help_icon_size"
+                        android:layout_height="@dimen/profile_setting_checkbox_text_help_icon_size"
+                        android:src="@drawable/cover_img_help_accessibility"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_profile_setting_faa_desc"
+                    android:textSize="@dimen/profile_setting_text_size_small"
+                    android:textColor="@color/colorTextBrown2"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
